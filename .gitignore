@@ -1,0 +1,48 @@
+# ============================
+# 🐍 Keylogger Educativo - .gitignore
+# ============================
+
+# Arquivos de log e sensíveis
+log.txt
+chave.key
+
+# Diretórios de cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração pessoais
+*.ini
+*.cfg
+*.json
+
+# Arquivos de backup e temporários
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.iml
+
+# Logs de execução ou testes
+*.log
+*.out
+
+# Arquivos de build e distribuição
+build/
+dist/
+*.egg-info/
